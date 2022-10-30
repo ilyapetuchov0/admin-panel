@@ -5,7 +5,7 @@ const New = () => {
         <div>
 
         </div>
-    );
-};
+    )
+}
 
-export default New;
+export default New

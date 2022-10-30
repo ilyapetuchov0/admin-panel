@@ -83,7 +83,7 @@ const Sidebar = () => {
                 <div className="colorOption"></div>
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Sidebar;

@@ -5,7 +5,7 @@ const Single = () => {
         <div>
 
         </div>
-    );
-};
+    )
+}
 
-export default Single;
+export default Single

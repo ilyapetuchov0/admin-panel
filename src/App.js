@@ -1,9 +1,9 @@
-import Home from "./pages/home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/login/Login";
-import List from "./pages/list/List";
-import Single from "./pages/single/Single";
-import New from "./pages/new/New";
+import Home from "./pages/home/Home"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Login from "./pages/login/Login"
+import List from "./pages/list/List"
+import Single from "./pages/single/Single"
+import New from "./pages/new/New"
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

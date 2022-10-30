@@ -1,12 +1,11 @@
 import "./navbar.scss"
 
-import SearchIcon from '@mui/icons-material/Search';
-import LanguageIcon from '@mui/icons-material/Language';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import FullscreenExitOutlinedIcon from '@mui/icons-material/FullscreenExitOutlined';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
+import SearchIcon from '@mui/icons-material/Search'
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+import FullscreenExitOutlinedIcon from '@mui/icons-material/FullscreenExitOutlined'
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined'
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline'
+import ListOutlinedIcon from '@mui/icons-material/ListOutlined'
 
 const Navbar = () => {
     return (
@@ -17,10 +16,6 @@ const Navbar = () => {
                     <SearchIcon className="icon" />
                 </div>
                 <div className="items">
-                    <div className="item">
-                        <LanguageIcon className="icon" />
-                        English
-                    </div>
                     <div className="item">
                         <DarkModeOutlinedIcon className="icon" />
                     </div>
@@ -44,7 +39,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

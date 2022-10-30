@@ -1,86 +1,66 @@
 import "./sidebar.scss"
-import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
 import StoreIcon from '@mui/icons-material/Store';
+import DateRangeIcon from '@mui/icons-material/DateRange';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AssessmentIcon from '@mui/icons-material/Assessment';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import DnsIcon from '@mui/icons-material/Dns';
-import StorageIcon from '@mui/icons-material/Storage';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">
-                    googolplex
-                </span>
+                <Link to="/" style={{textDecoration: "none"}}>
+                    <span className="logo">
+                        googolplex
+                    </span>
+                </Link>
+
             </div>
             <hr/>
             <div className="center">
                 <ul>
-                    <p className="title">MAIN</p>
+                    <p className="title">СПИСКИ</p>
+                    <Link to="/users" style={{textDecoration: "none"}}>
+                        <li>
+                            <PersonIcon className="icon" />
+                            <span>Ученики</span>
+                        </li>
+                    </Link>
                     <li>
-                        <DashboardIcon className="icon" />
-                        <span>Dashboard</span>
-                    </li>
-                    <p className="title">LISTS</p>
-                    <li>
-                        <PersonIcon className="icon" />
-                        <span>Users</span>
+                        <DateRangeIcon className="icon" />
+                        <span>Расписание</span>
                     </li>
                     <li>
                         <StoreIcon className="icon" />
-                        <span>Products</span>
+                        <span>Товары</span>
                     </li>
                     <li>
                         <CreditCardIcon className="icon" />
-                        <span>Orders</span>
+                        <span>Заказы</span>
                     </li>
-                    <li>
-                        <LocalShippingIcon className="icon" />
-                        <span>Delivery</span>
-                    </li>
-                    <p className="title">USEFUL</p>
+                    <p className="title">ПОЛЕЗНОЕ</p>
                     <li>
                         <AssessmentIcon className="icon" />
-                        <span>Stats</span>
+                        <span>Статистика</span>
                     </li>
+                    <p className="title">АДМИН</p>
                     <li>
-                        <NotificationsIcon className="icon" />
-                        <span>Notifications</span>
-                    </li>
-                    <p className="title">SERVICE</p>
-                    <li>
-                        <DnsIcon className="icon" />
-                        <span>System Health</span>
-                    </li>
-                    <li>
-                        <StorageIcon className="icon" />
-                        <span>Logs</span>
+                        <AccountCircleIcon className="icon" />
+                        <span>Профиль</span>
                     </li>
                     <li>
                         <SettingsIcon className="icon" />
-                        <span>Settings</span>
-                    </li>
-                    <p className="title">USER</p>
-                    <li>
-                        <AccountCircleIcon className="icon" />
-                        <span>Profile</span>
+                        <span>Настройки</span>
                     </li>
                     <li>
                         <LogoutIcon className="icon" />
-                        <span>Logout</span>
+                        <span>Выйти</span>
                     </li>
                 </ul>
-            </div>
-            <div className="bottom">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
             </div>
         </div>
     )
